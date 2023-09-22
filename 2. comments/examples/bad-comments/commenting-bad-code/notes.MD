@@ -1,0 +1,1 @@
+This example is from [Javscaript.info](https://javascript.info/comments)

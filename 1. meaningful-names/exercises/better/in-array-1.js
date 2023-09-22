@@ -1,3 +1,5 @@
+//Code inspired by https://github.com/wilmoore/inarray.js/blob/master/index.js
+
 function inArray1(list, item) {
   list = Object.prototype.toString.call(list) === "[object Array]" ? list : [];
 

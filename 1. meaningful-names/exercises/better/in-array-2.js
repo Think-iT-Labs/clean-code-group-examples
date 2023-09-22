@@ -1,3 +1,4 @@
+// Code inspired by: https://github.com/jonschlinkert/in-array/blob/master/index.js
 function inArray2(arr, val) {
   arr = arr || [];
   var len = arr.length;
