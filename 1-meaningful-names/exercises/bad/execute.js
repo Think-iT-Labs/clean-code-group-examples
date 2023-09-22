@@ -1,4 +1,4 @@
-function execute2(l, v) {
+function execute1(l, v) {
   l = l || [];
   const len = l.length;
   let i;
@@ -11,4 +11,4 @@ function execute2(l, v) {
   return false;
 }
 
-module.exports = { execute2 };
+module.exports = { execute1 };
