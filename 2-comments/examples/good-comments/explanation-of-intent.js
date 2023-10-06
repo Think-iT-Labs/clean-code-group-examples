@@ -5,6 +5,7 @@ const someActionThatReturnsAPromise = async () => {
 const fetchById = async (array, shipmentId) => {
   const providerContracts = [];
 
+  // this is why we did this...
   await Promise.all(
     array.map(async (provider) => {
       const names = await someActionThatReturnsAPromise();

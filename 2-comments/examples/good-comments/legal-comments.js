@@ -1,6 +1,6 @@
 /*
   Copyright (C) 2006 by Project GetRich Inc. All Rights Reserved
- Code was copied from StackOverflow https://stackoverflow.com/a/40200710
+  Code was copied from StackOverflow https://stackoverflow.com/a/40200710
 */
 
 const isPrime = (num) => {

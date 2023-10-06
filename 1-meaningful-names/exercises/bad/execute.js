@@ -11,4 +11,9 @@ function execute1(l, v) {
   return false;
 }
 
-module.exports = { execute1 };
+function findItemInArray(array, value) {
+  if (!array) return false;
+  return !!array.find((item) => item === value);
+}
+
+module.exports = { execute1, findItemInArray };
