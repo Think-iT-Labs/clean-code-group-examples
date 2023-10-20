@@ -4,15 +4,8 @@ import { EdcConnectorClient } from "@think-it-labs/edc-connector-client";
 
 const builder = new EdcConnectorClient.Builder();
 
-const connectorAddresses = {
-  management: "http://some-host.com/management",
-  public: "http://some-host.com/public",
-  connectorToken: "some-token",
-};
-
-builder.managementUrl(connectorAddresses.management);
-builder.publicUrl(connectorAddresses.public);
-builder.apiToken(connectorAddresses.connectorToken);
+builder.managementUrl("http://some-host.com/management");
+builder.apiToken("some-token");
 
 const connectorClient = builder.build();
 

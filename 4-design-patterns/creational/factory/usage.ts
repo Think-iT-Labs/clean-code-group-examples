@@ -4,4 +4,4 @@ const fileService = FileServiceFactory.create(
   process.env.NODE_ENV === "production" ? "s3" : "local"
 );
 
-fileService.write("users.json", JSON.stringify([{ id: 1, name: "John" }]));
+fileService.write("users.json", JSON.stringify([{ id: 1, name: "Test user" }]));
