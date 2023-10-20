@@ -9,18 +9,20 @@ interface User {
   age: number;
 }
 
-export function createUser(
-  name: string,
-  age: number
-): UserCreationError | User {
+type Return = {
+  data?: User | null;
+  error: null | string;
+};
+export function createUser(name: string, age: number) {
   if (typeof name !== "string" || name.trim() === "") {
-    return UserCreationError.InvalidName;
+    return { error: "Invalid name" };
   }
 
   if (typeof age !== "number" || age <= 0) {
-    return UserCreationError.InvalidAge;
+    return { error: "Invalid age" };
   }
 
   const user: User = { name, age };
-  return user;
+
+  return { error: null, data: user };
 }
