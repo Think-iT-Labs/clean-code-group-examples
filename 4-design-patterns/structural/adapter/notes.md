@@ -1,0 +1,2 @@
+- See this as middle layer between 2 parts of our code. 
+- Adapter pattern allows 2 parts of your code that are incompactible to communicate
